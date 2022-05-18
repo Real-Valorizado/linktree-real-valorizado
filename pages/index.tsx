@@ -8,7 +8,7 @@ import Link from 'next/link'
 const tree = [
   {
     site: 'Notícias',
-    url: 'https://noticias.realvalorizado.com.br/',
+    url: 'https://realvalorizado.com.br/noticias/',
   },
   {
     site: 'Ferramentas',
@@ -16,7 +16,7 @@ const tree = [
   },
   {
     site: 'Ebooks',
-    url: 'https://ebooks.realvalorizado.com.br/',
+    url: 'https://realvalorizado.com.br/ebooks/',
   },
   {
     site: 'Instagram',
@@ -53,11 +53,27 @@ const Home: NextPage = () => {
       <Head>
         <title>Real Valorizado</title>
         <meta name="description" content="Links de acesso" />
-        <link rel="icon" href="/realvalorizado-logo.png" />
+        <link rel="icon" href="/favicon.png" />
+
+        <script dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                            })(window,document,'script','dataLayer','GTM-PFLF854');`}}>
+        </script>
+
+        <meta name="facebook-domain-verification" content="0xzp6fw909wv5qu3h0392gry9ak4a4" />
       </Head>
 
       <div className="bg-gradient-to-r from-indigo-700 to-blue-700">
         <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+
+          <noscript dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFLF854"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}>
+          </noscript>
+
           <div className="flex-shrink-0 pt-16">
             <div className="text-center h-12 w-auto">
               <Image
