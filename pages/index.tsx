@@ -97,7 +97,7 @@ const Home: NextPage = () => {
                 {tree.map((item) => (
                   <div
                     key={item.site}
-                    className="relative rounded-full border border-gray-300 bg-gradient-to-r from-blue-700 to-indigo-700 px-6 py-5 shadow-sm flex items-center space-x-3 hover:from-indigo-600 hover:to-blue-600 hover:shadow-blue-400/40 hover:shadow-lg"
+                    className="relative rounded-full border border-gray-300 bg-gradient-to-tr from-blue-700 to-indigo-700 px-6 py-5 shadow-sm flex items-center space-x-3 hover:from-indigo-600 hover:to-blue-600 hover:shadow-blue-400/40 hover:shadow-lg"
                   >
 
                     <div className="flex-1 min-w-0 text-center">
