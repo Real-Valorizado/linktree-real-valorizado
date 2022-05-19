@@ -106,7 +106,7 @@ const Home: NextPage = () => {
         <meta name="facebook-domain-verification" content="0xzp6fw909wv5qu3h0392gry9ak4a4" />
       </Head>
 
-      <div className="bg-gradient-to-r from-indigo-700 to-blue-700">
+      <div className="bg-gradient-to-r h-screen from-indigo-700 to-blue-700">
         <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <noscript dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFLF854"
@@ -151,8 +151,8 @@ const Home: NextPage = () => {
           </div>
         </main>
         <footer className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="border-t border-gray-200 py-12 text-center">
-            <div className="mt-8 flex justify-center space-x-6">
+          <div className="text-center">
+            <div className="flex justify-center space-x-6">
               {social.map((socialico) => (
                 <a key={socialico.name} href={socialico.href} className="text-blue-100 hover:text-blue-900">
                   <span className="sr-only">{socialico.name}</span>
